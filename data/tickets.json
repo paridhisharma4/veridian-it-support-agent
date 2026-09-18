@@ -1,0 +1,1015 @@
+{
+  "tickets": [
+    {
+      "id": "TK-1042",
+      "employee": "R. Verma",
+      "issue_summary": "VPN credential expired",
+      "status": "Resolved",
+      "category": "network",
+      "kb_reference": "KB-02",
+      "created_date": "2026-09-18",
+      "resolved_date": "2026-09-18",
+      "resolution": "Employee renewed VPN credentials via self-service portal",
+      "closed": true
+    },
+    {
+      "id": "TK-1043",
+      "employee": "S. Iyer",
+      "issue_summary": "Laptop replacement (3.2 yrs old)",
+      "status": "Approved — pending fulfillment",
+      "category": "hardware",
+      "kb_reference": "KB-03",
+      "created_date": "2026-09-15",
+      "approved_date": "2026-09-17",
+      "notes": "Approved under KB-03 3-year policy. Hardware failure verified.",
+      "closed": false
+    },
+    {
+      "id": "TK-1044",
+      "employee": "A. Khan",
+      "issue_summary": "Non-catalog software request",
+      "status": "Pending Security review",
+      "category": "software",
+      "kb_reference": "KB-04",
+      "created_date": "2026-09-19",
+      "notes": "Security review in progress. ETA: 3-5 business days from creation.",
+      "closed": false
+    },
+    {
+      "id": "TK-1045",
+      "employee": "P. Joshi",
+      "issue_summary": "Mailbox quota increase",
+      "status": "Approved at 35GB",
+      "category": "email",
+      "kb_reference": "KB-06",
+      "created_date": "2026-09-16",
+      "approved_date": "2026-09-17",
+      "resolution": "Manager approved quota increase to 35GB",
+      "closed": true
+    },
+    {
+      "id": "TK-1046",
+      "employee": "M. Das",
+      "issue_summary": "Printer paper jam, floor 2",
+      "status": "Resolved",
+      "category": "hardware",
+      "kb_reference": "KB-05",
+      "created_date": "2026-09-17",
+      "resolved_date": "2026-09-17",
+      "resolution": "Print spooler restarted. Physical jam cleared.",
+      "closed": true
+    },
+    {
+      "id": "TK-1047",
+      "employee": "K. Singh",
+      "issue_summary": "Home office equipment request",
+      "status": "Pending Finance",
+      "category": "hardware",
+      "kb_reference": "KB-10",
+      "created_date": "2026-09-18",
+      "notes": "Manager approval received. Awaiting Finance processing.",
+      "closed": false
+    },
+    {
+      "id": "TK-1048",
+      "employee": "T. Rao",
+      "issue_summary": "Phishing email reported",
+      "status": "Escalated to Security — under investigation",
+      "category": "security",
+      "kb_reference": "KB-09",
+      "created_date": "2026-09-19",
+      "escalated_to": "security@veridian-corp.example",
+      "notes": "Security team investigating. Employee advised not to click links.",
+      "closed": false
+    },
+    {
+      "id": "TK-1049",
+      "employee": "V. Nambiar",
+      "issue_summary": "Password reset",
+      "status": "Resolved",
+      "category": "authentication",
+      "kb_reference": "KB-01",
+      "created_date": "2026-09-20",
+      "resolved_date": "2026-09-20",
+      "resolution": "Account unlocked manually. Employee reset password via self-service portal.",
+      "closed": true
+    },
+    {
+      "id": "TK-1050",
+      "employee": "J. Fernandes",
+      "issue_summary": "Admin access request",
+      "status": "Rejected — no business justification provided",
+      "category": "access",
+      "created_date": "2026-09-19",
+      "rejected_date": "2026-09-20",
+      "resolution": "Request rejected. No valid business justification or approval from manager.",
+      "closed": true
+    },
+    {
+      "id": "TK-1051",
+      "employee": "L. Menon",
+      "issue_summary": "Guest Wi-Fi issued",
+      "status": "Resolved",
+      "category": "network",
+      "kb_reference": "KB-07",
+      "created_date": "2026-09-20",
+      "resolved_date": "2026-09-20",
+      "resolution": "Guest Wi-Fi credentials generated from front-desk kiosk. Valid for 24 hours.",
+      "closed": true
+    },
+    {
+      "id": "TK-1052",
+      "employee": "Aditi Sharma",
+      "email": "aditi.sharma@veridian-corp.example",
+      "issue_summary": "My laptop won't turn on at all, it's completely dead, had it about 3.5 years ...",
+      "kb_source_cited": "KB-03, ASSET-POLICY",
+      "status": "in_progress",
+      "decision_reasoning": "Policy conflict must be resolved by management",
+      "created_at": "2026-09-18 12:10:33",
+      "audit_log": [
+        {
+          "timestamp": "2026-09-18T12:10:33.405367",
+          "step": "classification",
+          "details": {
+            "category": "laptop",
+            "confidence": 1.0,
+            "entities": {
+              "laptop_age": 3.5,
+              "definitely_broken": true,
+              "employee_type": "full-time"
+            },
+            "reasoning": "Matched keywords: ['laptop', \"won't turn on\", 'dead']. Confidence: 1.00"
+          }
+        },
+        {
+          "timestamp": "2026-09-18T12:10:33.405373",
+          "step": "kb_retrieval",
+          "details": {
+            "policies_found": [
+              "KB-03",
+              "ASSET-POLICY"
+            ],
+            "conflicts": [
+              "KB-03: CONFLICTS WITH Asset Management Policy which specifies 4-year cycle",
+              "ASSET-POLICY: CONFLICTS WITH KB-03 which specifies 3-year eligibility"
+            ],
+            "reasoning": [
+              "Category 'laptop' maps to KB articles: KB-03, ASSET-POLICY",
+              "Retrieved 2 relevant KB articles",
+              "⚠️ CONFLICT DETECTED: 2 policy conflict(s) found"
+            ]
+          }
+        },
+        {
+          "timestamp": "2026-09-18T12:10:33.405374",
+          "step": "decision",
+          "details": {
+            "action": "escalate",
+            "reason": "Policy conflict must be resolved by management",
+            "reasoning_steps": [
+              "STEP 1: Policy conflict detected",
+              "KB-03: CONFLICTS WITH Asset Management Policy which specifies 4-year cycle",
+              "ASSET-POLICY: CONFLICTS WITH KB-03 which specifies 3-year eligibility"
+            ],
+            "escalate_to": "IT Management and Finance",
+            "warning": null
+          }
+        }
+      ],
+      "request_text": "My laptop won't turn on at all, it's completely dead, had it about 3.5 years now.",
+      "escalate_to": "IT Management and Finance",
+      "instructions": "Two policies conflict on this issue. Both KB-03 (3-year laptop replacement) and Asset Management Policy (4-year refresh cycle) apply. Management must clarify which policy takes precedence."
+    },
+    {
+      "id": "TK-1053",
+      "employee": "Aditi Sharma",
+      "email": "aditi.sharma@veridian-corp.example",
+      "issue_summary": "My laptop won't turn on at all, it's completely dead, had it about 3.5 years ...",
+      "kb_source_cited": "KB-03, ASSET-POLICY",
+      "status": "in_progress",
+      "decision_reasoning": "Policy conflict must be resolved by management",
+      "created_at": "2026-09-18 12:13:57",
+      "audit_log": [
+        {
+          "timestamp": "2026-09-18T12:13:57.440004",
+          "step": "classification",
+          "details": {
+            "category": "laptop",
+            "confidence": 1.0,
+            "entities": {
+              "laptop_age": 3.5,
+              "definitely_broken": true,
+              "employee_type": "full-time"
+            },
+            "reasoning": "Matched keywords: ['laptop', \"won't turn on\", 'dead']. Confidence: 1.00"
+          }
+        },
+        {
+          "timestamp": "2026-09-18T12:13:57.440010",
+          "step": "kb_retrieval",
+          "details": {
+            "policies_found": [
+              "KB-03",
+              "ASSET-POLICY"
+            ],
+            "conflicts": [
+              "KB-03: CONFLICTS WITH Asset Management Policy which specifies 4-year cycle",
+              "ASSET-POLICY: CONFLICTS WITH KB-03 which specifies 3-year eligibility"
+            ],
+            "reasoning": [
+              "Category 'laptop' maps to KB articles: KB-03, ASSET-POLICY",
+              "Retrieved 2 relevant KB articles",
+              "⚠️ CONFLICT DETECTED: 2 policy conflict(s) found"
+            ]
+          }
+        },
+        {
+          "timestamp": "2026-09-18T12:13:57.440013",
+          "step": "decision",
+          "details": {
+            "action": "escalate",
+            "reason": "Policy conflict must be resolved by management",
+            "reasoning_steps": [
+              "STEP 1: Policy conflict detected",
+              "KB-03: CONFLICTS WITH Asset Management Policy which specifies 4-year cycle",
+              "ASSET-POLICY: CONFLICTS WITH KB-03 which specifies 3-year eligibility"
+            ],
+            "escalate_to": "IT Management and Finance",
+            "warning": null
+          }
+        }
+      ],
+      "request_text": "My laptop won't turn on at all, it's completely dead, had it about 3.5 years now.",
+      "escalate_to": "IT Management and Finance",
+      "instructions": "Two policies conflict on this issue. Both KB-03 (3-year laptop replacement) and Asset Management Policy (4-year refresh cycle) apply. Management must clarify which policy takes precedence."
+    },
+    {
+      "id": "TK-1054",
+      "employee": "Karan Mehta",
+      "email": "karan.mehta@veridian-corp.example",
+      "issue_summary": "I'm locked out of my account, tried my password 6 times.",
+      "kb_source_cited": "KB-01",
+      "status": "resolved",
+      "decision_reasoning": "Password reset with account unlock per KB-01",
+      "created_at": "2026-09-18 12:16:27",
+      "audit_log": [
+        {
+          "timestamp": "2026-09-18T12:16:27.284756",
+          "step": "classification",
+          "details": {
+            "category": "password",
+            "confidence": 0.6666666666666666,
+            "entities": {
+              "employee_type": "full-time",
+              "locked_out": true,
+              "failed_attempts": 6
+            },
+            "reasoning": "Matched keywords: ['password', 'locked out']. Confidence: 0.67"
+          }
+        },
+        {
+          "timestamp": "2026-09-18T12:16:27.284762",
+          "step": "kb_retrieval",
+          "details": {
+            "policies_found": [
+              "KB-01"
+            ],
+            "conflicts": [],
+            "reasoning": [
+              "Category 'password' maps to KB articles: KB-01",
+              "Retrieved 1 relevant KB articles"
+            ]
+          }
+        },
+        {
+          "timestamp": "2026-09-18T12:16:27.284765",
+          "step": "decision",
+          "details": {
+            "action": "resolve",
+            "reason": "Password reset with account unlock per KB-01",
+            "reasoning_steps": [
+              "STEP 4: Found relevant policy - KB-01: Password Reset",
+              "STEP 5: Applying policy rules",
+              "- Employee locked out after 6 failed attempts",
+              "- Per KB-01: Account must be manually unlocked by IT",
+              "- Decision: Auto-resolve (unlock account, direct to self-service portal)"
+            ],
+            "escalate_to": null,
+            "warning": null
+          }
+        }
+      ],
+      "request_text": "I'm locked out of my account, tried my password 6 times.",
+      "instructions": "Your account has been unlocked. You can now reset your password via the self-service portal. No approval required per KB-01."
+    },
+    {
+      "id": "TK-1055",
+      "employee": "Kavya Pillai",
+      "email": "kavya.pillai@veridian-corp.example",
+      "issue_summary": "Can someone give me admin access to the finance reporting server? Need it urg...",
+      "kb_source_cited": "",
+      "status": "escalated",
+      "decision_reasoning": "Admin access requires justification and approval",
+      "created_at": "2026-09-18 12:16:45",
+      "audit_log": [
+        {
+          "timestamp": "2026-09-18T12:16:45.428564",
+          "step": "classification",
+          "details": {
+            "category": "admin_access",
+            "confidence": 1.0,
+            "entities": {
+              "employee_type": "full-time",
+              "urgency": "high"
+            },
+            "reasoning": "Matched keywords: ['access', 'admin', 'server', 'reporting', 'finance reporting']. Confidence: 1.00"
+          }
+        },
+        {
+          "timestamp": "2026-09-18T12:16:45.428571",
+          "step": "kb_retrieval",
+          "details": {
+            "policies_found": [
+              "KB-07",
+              "KB-02",
+              "KB-08"
+            ],
+            "conflicts": [],
+            "reasoning": [
+              "Retrieved 3 relevant KB articles"
+            ]
+          }
+        },
+        {
+          "timestamp": "2026-09-18T12:16:45.428573",
+          "step": "decision",
+          "details": {
+            "action": "escalate",
+            "reason": "Admin access requires justification and approval",
+            "reasoning_steps": [
+              "STEP 4: Found relevant policy - KB-07: Guest Wi-Fi Access",
+              "STEP 5: Applying policy rules",
+              "- Admin/server access request",
+              "- No specific KB policy covers this",
+              "- Precedent: TK-1050 rejected due to no business justification",
+              "- Requires business justification and manager approval",
+              "- Decision: Escalate for review"
+            ],
+            "escalate_to": "IT Security and Manager",
+            "warning": null
+          }
+        }
+      ],
+      "request_text": "Can someone give me admin access to the finance reporting server? Need it urgently for month-end.",
+      "escalate_to": "IT Security and Manager",
+      "instructions": "Admin access requests require: (1) Clear business justification, (2) Manager approval, (3) IT Security review. Note: Previous similar requests (e.g., TK-1050) were rejected without proper justification.",
+      "precedent": "TK-1050 (Admin access rejected - no business justification)"
+    },
+    {
+      "id": "TK-1056",
+      "employee": "Rahul Menon",
+      "email": "rahul.menon@veridian-corp.example",
+      "issue_summary": "hey can you help, its not working",
+      "kb_source_cited": "",
+      "status": "new",
+      "decision_reasoning": "Request lacks sufficient detail to identify the issue",
+      "created_at": "2026-09-18 12:17:06",
+      "audit_log": [
+        {
+          "timestamp": "2026-09-18T12:17:06.781606",
+          "step": "classification",
+          "details": {
+            "category": "unclear",
+            "confidence": 0.6666666666666666,
+            "entities": {
+              "employee_type": "full-time"
+            },
+            "reasoning": "Matched keywords: ['not working', 'help']. Confidence: 0.67"
+          }
+        },
+        {
+          "timestamp": "2026-09-18T12:17:06.781610",
+          "step": "kb_retrieval",
+          "details": {
+            "policies_found": [
+              "UNKNOWN"
+            ],
+            "conflicts": [],
+            "reasoning": [
+              "Retrieved 1 relevant KB articles"
+            ]
+          }
+        },
+        {
+          "timestamp": "2026-09-18T12:17:06.781612",
+          "step": "decision",
+          "details": {
+            "action": "clarify",
+            "reason": "Request lacks sufficient detail to identify the issue",
+            "reasoning_steps": [
+              "STEP 3: Request is too vague to classify",
+              "Action: Request clarification from employee"
+            ],
+            "escalate_to": null,
+            "warning": null
+          }
+        }
+      ],
+      "request_text": "hey can you help, its not working"
+    },
+    {
+      "id": "TK-1057",
+      "employee": "Ananya Reddy",
+      "email": "ananya.reddy@veridian-corp.example",
+      "issue_summary": "I think I got a phishing email asking for my login — forwarding it to a few t...",
+      "kb_source_cited": "KB-09",
+      "status": "escalated",
+      "decision_reasoning": "Security incident requires immediate escalation per KB-09",
+      "created_at": "2026-09-18 12:17:25",
+      "audit_log": [
+        {
+          "timestamp": "2026-09-18T12:17:25.034843",
+          "step": "classification",
+          "details": {
+            "category": "security",
+            "confidence": 0.6666666666666666,
+            "entities": {
+              "employee_type": "full-time",
+              "security_violation": "forwarding_phishing_email"
+            },
+            "reasoning": "Matched keywords: ['phishing', 'forward']. Confidence: 0.67"
+          }
+        },
+        {
+          "timestamp": "2026-09-18T12:17:25.034850",
+          "step": "kb_retrieval",
+          "details": {
+            "policies_found": [
+              "KB-09",
+              "KB-06",
+              "KB-01"
+            ],
+            "conflicts": [],
+            "reasoning": [
+              "Category 'security' maps to KB articles: KB-09",
+              "Retrieved 3 relevant KB articles"
+            ]
+          }
+        },
+        {
+          "timestamp": "2026-09-18T12:17:25.034853",
+          "step": "decision",
+          "details": {
+            "action": "escalate",
+            "reason": "Security incident requires immediate escalation per KB-09",
+            "reasoning_steps": [
+              "STEP 2: Security incident detected",
+              "POLICY VIOLATION: Employee is attempting to forward suspected phishing email to teammates. KB-09 explicitly states: 'Do NOT forward to other employees.'",
+              "Action: Escalate immediately to security@veridian-corp.example per KB-09"
+            ],
+            "escalate_to": "security@veridian-corp.example",
+            "warning": "POLICY VIOLATION: Employee is attempting to forward suspected phishing email to teammates. KB-09 explicitly states: 'Do NOT forward to other employees.'"
+          }
+        }
+      ],
+      "request_text": "I think I got a phishing email asking for my login — forwarding it to a few teammates to check.",
+      "escalate_to": "security@veridian-corp.example",
+      "warning": "POLICY VIOLATION: Employee is attempting to forward suspected phishing email to teammates. KB-09 explicitly states: 'Do NOT forward to other employees.'",
+      "instructions": "Report to security@veridian-corp.example immediately. Do not forward suspicious emails to other employees."
+    },
+    {
+      "id": "TK-1058",
+      "employee": "Vikram Chawla",
+      "email": "vikram.chawla@veridian-corp.example",
+      "issue_summary": "Can I get Wi-Fi access for a guest visiting our office tomorrow?",
+      "kb_source_cited": "KB-07",
+      "status": "resolved",
+      "decision_reasoning": "Guest Wi-Fi can be self-generated per KB-07",
+      "created_at": "2026-09-18 12:18:06",
+      "audit_log": [
+        {
+          "timestamp": "2026-09-18T12:18:06.542603",
+          "step": "classification",
+          "details": {
+            "category": "wifi",
+            "confidence": 1.0,
+            "entities": {
+              "employee_type": "full-time"
+            },
+            "reasoning": "Matched keywords: ['guest', 'wi-fi', 'access']. Confidence: 1.00"
+          }
+        },
+        {
+          "timestamp": "2026-09-18T12:18:06.542609",
+          "step": "kb_retrieval",
+          "details": {
+            "policies_found": [
+              "KB-07",
+              "KB-02",
+              "KB-08"
+            ],
+            "conflicts": [],
+            "reasoning": [
+              "Category 'wifi' maps to KB articles: KB-07",
+              "Retrieved 3 relevant KB articles"
+            ]
+          }
+        },
+        {
+          "timestamp": "2026-09-18T12:18:06.542611",
+          "step": "decision",
+          "details": {
+            "action": "resolve",
+            "reason": "Guest Wi-Fi can be self-generated per KB-07",
+            "reasoning_steps": [
+              "STEP 4: Found relevant policy - KB-07: Guest Wi-Fi Access",
+              "STEP 5: Applying policy rules",
+              "- Per KB-07: Guest WiFi can be generated by any employee",
+              "- No IT ticket required",
+              "- Decision: Auto-resolve"
+            ],
+            "escalate_to": null,
+            "warning": null
+          }
+        }
+      ],
+      "request_text": "Can I get Wi-Fi access for a guest visiting our office tomorrow?",
+      "instructions": "Generate guest Wi-Fi credentials from the front-desk kiosk. Credentials are valid for 24 hours. No IT ticket required per KB-07."
+    },
+    {
+      "id": "TK-1059",
+      "employee": "Ritu Bhatia",
+      "email": "ritu.bhatia@veridian-corp.example",
+      "issue_summary": "Need approval to install a data-analysis tool that's not in the software cata...",
+      "kb_source_cited": "KB-04",
+      "status": "escalated",
+      "decision_reasoning": "Non-catalog software requires security review per KB-04",
+      "created_at": "2026-09-18 12:18:12",
+      "audit_log": [
+        {
+          "timestamp": "2026-09-18T12:18:12.560845",
+          "step": "classification",
+          "details": {
+            "category": "software",
+            "confidence": 1.0,
+            "entities": {
+              "employee_type": "full-time"
+            },
+            "reasoning": "Matched keywords: ['software', 'install', 'tool']. Confidence: 1.00"
+          }
+        },
+        {
+          "timestamp": "2026-09-18T12:18:12.560851",
+          "step": "kb_retrieval",
+          "details": {
+            "policies_found": [
+              "KB-04",
+              "KB-08"
+            ],
+            "conflicts": [],
+            "reasoning": [
+              "Category 'software' maps to KB articles: KB-04",
+              "Retrieved 2 relevant KB articles"
+            ]
+          }
+        },
+        {
+          "timestamp": "2026-09-18T12:18:12.560854",
+          "step": "decision",
+          "details": {
+            "action": "escalate",
+            "reason": "Non-catalog software requires security review per KB-04",
+            "reasoning_steps": [
+              "STEP 4: Found relevant policy - KB-04: Software Installation Requests",
+              "STEP 5: Applying policy rules",
+              "- Per KB-04: Non-catalog software requires IT Security review",
+              "- Review takes 3-5 business days",
+              "- Decision: Escalate to IT Security"
+            ],
+            "escalate_to": "IT Security",
+            "warning": null
+          }
+        }
+      ],
+      "request_text": "Need approval to install a data-analysis tool that's not in the software catalog.",
+      "escalate_to": "IT Security",
+      "instructions": "Non-catalog software requires IT Security review per KB-04. Review takes 3-5 business days. Please provide software name, vendor, and business justification."
+    },
+    {
+      "id": "TK-1060",
+      "employee": "Sanjay Oberoi",
+      "email": "sanjay.oberoi@veridian-corp.example",
+      "issue_summary": "My VPN stopped working this morning, says credentials expired.",
+      "kb_source_cited": "KB-02",
+      "status": "resolved",
+      "decision_reasoning": "VPN credential renewal for full-time employee per KB-02",
+      "created_at": "2026-09-18 12:18:19",
+      "audit_log": [
+        {
+          "timestamp": "2026-09-18T12:18:19.296069",
+          "step": "classification",
+          "details": {
+            "category": "vpn",
+            "confidence": 0.6666666666666666,
+            "entities": {
+              "employee_type": "full-time"
+            },
+            "reasoning": "Matched keywords: ['vpn', 'credentials expired']. Confidence: 0.67"
+          }
+        },
+        {
+          "timestamp": "2026-09-18T12:18:19.296086",
+          "step": "kb_retrieval",
+          "details": {
+            "policies_found": [
+              "KB-02",
+              "KB-07"
+            ],
+            "conflicts": [],
+            "reasoning": [
+              "Category 'vpn' maps to KB articles: KB-02",
+              "Retrieved 2 relevant KB articles"
+            ]
+          }
+        },
+        {
+          "timestamp": "2026-09-18T12:18:19.296087",
+          "step": "decision",
+          "details": {
+            "action": "resolve",
+            "reason": "VPN credential renewal for full-time employee per KB-02",
+            "reasoning_steps": [
+              "STEP 4: Found relevant policy - KB-02: VPN Access",
+              "STEP 5: Applying policy rules",
+              "- Employee type: full-time",
+              "- Per KB-02: Full-time employees have automatic VPN access",
+              "- VPN credentials expire every 90 days",
+              "- Decision: Auto-resolve (direct to renewal)"
+            ],
+            "escalate_to": null,
+            "warning": null
+          }
+        }
+      ],
+      "request_text": "My VPN stopped working this morning, says credentials expired.",
+      "instructions": "Your VPN credentials have expired. Please renew them via the self-service portal. VPN access is automatic for full-time employees per KB-02."
+    },
+    {
+      "id": "TK-1061",
+      "employee": "Meera Iyer",
+      "email": "meera.iyer@veridian-corp.example",
+      "issue_summary": "Printer on the 3rd floor keeps showing \"paper jam\" even though there's no jam.",
+      "kb_source_cited": "KB-05",
+      "status": "resolved",
+      "decision_reasoning": "Printer troubleshooting steps per KB-05",
+      "created_at": "2026-09-18 12:18:23",
+      "audit_log": [
+        {
+          "timestamp": "2026-09-18T12:18:23.764685",
+          "step": "classification",
+          "details": {
+            "category": "printer",
+            "confidence": 1.0,
+            "entities": {
+              "employee_type": "full-time"
+            },
+            "reasoning": "Matched keywords: ['printer', 'print', 'paper jam']. Confidence: 1.00"
+          }
+        },
+        {
+          "timestamp": "2026-09-18T12:18:23.764689",
+          "step": "kb_retrieval",
+          "details": {
+            "policies_found": [
+              "KB-05"
+            ],
+            "conflicts": [],
+            "reasoning": [
+              "Category 'printer' maps to KB articles: KB-05",
+              "Retrieved 1 relevant KB articles"
+            ]
+          }
+        },
+        {
+          "timestamp": "2026-09-18T12:18:23.764690",
+          "step": "decision",
+          "details": {
+            "action": "resolve",
+            "reason": "Printer troubleshooting steps per KB-05",
+            "reasoning_steps": [
+              "STEP 4: Found relevant policy - KB-05: Printer Troubleshooting",
+              "STEP 5: Applying policy rules",
+              "- Per KB-05: First check printer queue and restart print spooler",
+              "- If issue persists, log ticket with asset tag",
+              "- Decision: Provide troubleshooting guidance"
+            ],
+            "escalate_to": null,
+            "warning": null
+          }
+        }
+      ],
+      "request_text": "Printer on the 3rd floor keeps showing \"paper jam\" even though there's no jam.",
+      "instructions": "Per KB-05: First, check the printer queue and restart the print spooler. If the issue persists after these steps, log a ticket with the printer's asset tag for technician support."
+    },
+    {
+      "id": "TK-1062",
+      "employee": "Farhan Ali",
+      "email": "farhan.ali@veridian-corp.example",
+      "issue_summary": "I've started working from home 4 days a week, how do I get a monitor?",
+      "kb_source_cited": "KB-10",
+      "status": "in_progress",
+      "decision_reasoning": "WFH equipment eligible (4 days/week) per KB-10",
+      "created_at": "2026-09-18 12:18:29",
+      "audit_log": [
+        {
+          "timestamp": "2026-09-18T12:18:29.893925",
+          "step": "classification",
+          "details": {
+            "category": "wfh_equipment",
+            "confidence": 0.3333333333333333,
+            "entities": {
+              "employee_type": "full-time",
+              "remote_days_per_week": 4
+            },
+            "reasoning": "Matched keywords: ['monitor']. Confidence: 0.33"
+          }
+        },
+        {
+          "timestamp": "2026-09-18T12:18:29.893929",
+          "step": "kb_retrieval",
+          "details": {
+            "policies_found": [
+              "KB-10"
+            ],
+            "conflicts": [],
+            "reasoning": [
+              "Category 'wfh_equipment' maps to KB articles: KB-10",
+              "Retrieved 1 relevant KB articles"
+            ]
+          }
+        },
+        {
+          "timestamp": "2026-09-18T12:18:29.893930",
+          "step": "decision",
+          "details": {
+            "action": "escalate",
+            "reason": "WFH equipment eligible (4 days/week) per KB-10",
+            "reasoning_steps": [
+              "STEP 4: Found relevant policy - KB-10: Work-From-Home Equipment",
+              "STEP 5: Applying policy rules",
+              "- Remote days per week: 4",
+              "- Per KB-10: Eligibility requires 3+ days/week remote",
+              "- Employee is eligible for one-time home office allowance",
+              "- Requires manager sign-off and Finance processing",
+              "- Decision: Escalate to Manager then Finance"
+            ],
+            "escalate_to": "Manager (for sign-off) then Finance",
+            "warning": null
+          }
+        }
+      ],
+      "request_text": "I've started working from home 4 days a week, how do I get a monitor?",
+      "escalate_to": "Manager (for sign-off) then Finance",
+      "instructions": "You qualify for one-time home office equipment allowance (chair, monitor) per KB-10. Requires manager sign-off and Finance processing. IT will handle shipping once approved."
+    },
+    {
+      "id": "TK-1063",
+      "employee": "Rohit Desai",
+      "email": "rohit.desai@veridian-corp.example",
+      "issue_summary": "My mailbox is full and I can't send emails.",
+      "kb_source_cited": "KB-06",
+      "status": "resolved",
+      "decision_reasoning": "Mailbox quota guidance per KB-06",
+      "created_at": "2026-09-18 12:18:39",
+      "audit_log": [
+        {
+          "timestamp": "2026-09-18T12:18:39.274562",
+          "step": "classification",
+          "details": {
+            "category": "mailbox",
+            "confidence": 1.0,
+            "entities": {
+              "employee_type": "full-time"
+            },
+            "reasoning": "Matched keywords: ['mailbox', 'email', 'full', \"can't send\"]. Confidence: 1.00"
+          }
+        },
+        {
+          "timestamp": "2026-09-18T12:18:39.274568",
+          "step": "kb_retrieval",
+          "details": {
+            "policies_found": [
+              "KB-06"
+            ],
+            "conflicts": [],
+            "reasoning": [
+              "Category 'mailbox' maps to KB articles: KB-06",
+              "Retrieved 1 relevant KB articles"
+            ]
+          }
+        },
+        {
+          "timestamp": "2026-09-18T12:18:39.274570",
+          "step": "decision",
+          "details": {
+            "action": "resolve",
+            "reason": "Mailbox quota guidance per KB-06",
+            "reasoning_steps": [
+              "STEP 4: Found relevant policy - KB-06: Email Mailbox Quota",
+              "STEP 5: Applying policy rules",
+              "- Per KB-06: Default quota is 25GB",
+              "- Employees should archive old mail",
+              "- Quota increase requires manager approval (capped at 50GB)",
+              "- Decision: Provide guidance with escalation option"
+            ],
+            "escalate_to": null,
+            "warning": null
+          }
+        }
+      ],
+      "request_text": "My mailbox is full and I can't send emails.",
+      "instructions": "Per KB-06: Please archive old emails to free up space (default quota is 25GB). If you need a quota increase beyond 25GB, this requires manager approval and is capped at 50GB."
+    },
+    {
+      "id": "TK-1064",
+      "employee": "Sneha Kulkarni",
+      "email": "sneha.kulkarni@veridian-corp.example",
+      "issue_summary": "I can't log into the expense tool, keeps saying invalid credentials.",
+      "kb_source_cited": "KB-08",
+      "status": "in_progress",
+      "decision_reasoning": "Expense software access managed by Finance per KB-08",
+      "created_at": "2026-09-18 12:18:46",
+      "audit_log": [
+        {
+          "timestamp": "2026-09-18T12:18:46.538179",
+          "step": "classification",
+          "details": {
+            "category": "expense",
+            "confidence": 0.6666666666666666,
+            "entities": {
+              "employee_type": "full-time"
+            },
+            "reasoning": "Matched keywords: ['expense', 'expense tool']. Confidence: 0.67"
+          }
+        },
+        {
+          "timestamp": "2026-09-18T12:18:46.538183",
+          "step": "kb_retrieval",
+          "details": {
+            "policies_found": [
+              "KB-08",
+              "KB-04",
+              "KB-07"
+            ],
+            "conflicts": [],
+            "reasoning": [
+              "Category 'expense' maps to KB articles: KB-08",
+              "Retrieved 3 relevant KB articles"
+            ]
+          }
+        },
+        {
+          "timestamp": "2026-09-18T12:18:46.538185",
+          "step": "decision",
+          "details": {
+            "action": "escalate",
+            "reason": "Expense software access managed by Finance per KB-08",
+            "reasoning_steps": [
+              "STEP 4: Found relevant policy - KB-08: Expense Software Access",
+              "STEP 5: Applying policy rules",
+              "- Per KB-08: Expense software access managed by Finance, not IT",
+              "- IT can only help with technical issues for existing accounts",
+              "- Decision: Route to Finance"
+            ],
+            "escalate_to": "Finance Department",
+            "warning": null
+          }
+        }
+      ],
+      "request_text": "I can't log into the expense tool, keeps saying invalid credentials.",
+      "escalate_to": "Finance Department",
+      "instructions": "Per KB-08: Access to expense management tool is granted by Finance, not IT. IT can only assist with login/technical issues once your account exists. Please contact Finance for access."
+    },
+    {
+      "id": "TK-1065",
+      "employee": "Aman Gupta",
+      "email": "aman.gupta@veridian-corp.example",
+      "issue_summary": "Laptop screen is flickering on and off, had it 2 years, might just need a fix...",
+      "kb_source_cited": "KB-03, ASSET-POLICY",
+      "status": "in_progress",
+      "decision_reasoning": "Policy conflict must be resolved by management",
+      "created_at": "2026-09-18 12:18:54",
+      "audit_log": [
+        {
+          "timestamp": "2026-09-18T12:18:54.840551",
+          "step": "classification",
+          "details": {
+            "category": "laptop",
+            "confidence": 1.0,
+            "entities": {
+              "laptop_age": 2.0,
+              "employee_type": "full-time"
+            },
+            "reasoning": "Matched keywords: ['laptop', 'flickering', 'screen']. Confidence: 1.00"
+          }
+        },
+        {
+          "timestamp": "2026-09-18T12:18:54.840556",
+          "step": "kb_retrieval",
+          "details": {
+            "policies_found": [
+              "KB-03",
+              "ASSET-POLICY"
+            ],
+            "conflicts": [
+              "KB-03: CONFLICTS WITH Asset Management Policy which specifies 4-year cycle",
+              "ASSET-POLICY: CONFLICTS WITH KB-03 which specifies 3-year eligibility"
+            ],
+            "reasoning": [
+              "Category 'laptop' maps to KB articles: KB-03, ASSET-POLICY",
+              "Retrieved 2 relevant KB articles",
+              "⚠️ CONFLICT DETECTED: 2 policy conflict(s) found"
+            ]
+          }
+        },
+        {
+          "timestamp": "2026-09-18T12:18:54.840559",
+          "step": "decision",
+          "details": {
+            "action": "escalate",
+            "reason": "Policy conflict must be resolved by management",
+            "reasoning_steps": [
+              "STEP 1: Policy conflict detected",
+              "KB-03: CONFLICTS WITH Asset Management Policy which specifies 4-year cycle",
+              "ASSET-POLICY: CONFLICTS WITH KB-03 which specifies 3-year eligibility"
+            ],
+            "escalate_to": "IT Management and Finance",
+            "warning": null
+          }
+        }
+      ],
+      "request_text": "Laptop screen is flickering on and off, had it 2 years, might just need a fix not a replacement.",
+      "escalate_to": "IT Management and Finance",
+      "instructions": "Two policies conflict on this issue. Both KB-03 (3-year laptop replacement) and Asset Management Policy (4-year refresh cycle) apply. Management must clarify which policy takes precedence."
+    },
+    {
+      "id": "TK-1066",
+      "employee": "Tanya Chopra",
+      "email": "tanya.chopra@veridian-corp.example",
+      "issue_summary": "Requesting approval to install a browser extension for productivity tracking.",
+      "kb_source_cited": "KB-04",
+      "status": "escalated",
+      "decision_reasoning": "Non-catalog software requires security review per KB-04",
+      "created_at": "2026-09-18 12:19:00",
+      "audit_log": [
+        {
+          "timestamp": "2026-09-18T12:19:00.180378",
+          "step": "classification",
+          "details": {
+            "category": "software",
+            "confidence": 1.0,
+            "entities": {
+              "employee_type": "full-time"
+            },
+            "reasoning": "Matched keywords: ['install', 'extension', 'browser extension']. Confidence: 1.00"
+          }
+        },
+        {
+          "timestamp": "2026-09-18T12:19:00.180384",
+          "step": "kb_retrieval",
+          "details": {
+            "policies_found": [
+              "KB-04"
+            ],
+            "conflicts": [],
+            "reasoning": [
+              "Category 'software' maps to KB articles: KB-04",
+              "Retrieved 1 relevant KB articles"
+            ]
+          }
+        },
+        {
+          "timestamp": "2026-09-18T12:19:00.180387",
+          "step": "decision",
+          "details": {
+            "action": "escalate",
+            "reason": "Non-catalog software requires security review per KB-04",
+            "reasoning_steps": [
+              "STEP 4: Found relevant policy - KB-04: Software Installation Requests",
+              "STEP 5: Applying policy rules",
+              "- Per KB-04: Non-catalog software requires IT Security review",
+              "- Review takes 3-5 business days",
+              "- Decision: Escalate to IT Security"
+            ],
+            "escalate_to": "IT Security",
+            "warning": null
+          }
+        }
+      ],
+      "request_text": "Requesting approval to install a browser extension for productivity tracking.",
+      "escalate_to": "IT Security",
+      "instructions": "Non-catalog software requires IT Security review per KB-04. Review takes 3-5 business days. Please provide software name, vendor, and business justification."
+    }
+  ],
+  "next_ticket_id": 1067
+}
