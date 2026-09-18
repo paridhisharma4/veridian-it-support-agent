@@ -88,6 +88,9 @@ The system is pre-loaded with 15 employee requests from the assignment brief. Yo
 - 📹 Demo video (to be recorded)
 - 📊 Presentation slides (to be created)
 
+  # Demo Link
+  - https://veridian-it-support-agent.streamlit.app/
+
 ## License
 
 Built for AIONOS Agentic AI Factory Hackathon Assignment
