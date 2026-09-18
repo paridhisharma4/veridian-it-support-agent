@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veridian IT Support Agent - Architecture Diagram</title>
+    <script src="https://cdn.jsdelivr.net/npm/mermaid@10.6.1/dist/mermaid.min.js"></script>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            margin: 0;
+            padding: 40px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+        
+        .container {
+            background: white;
+            border-radius: 16px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            padding: 40px;
+            max-width: 1400px;
+            width: 100%;
+        }
+        
+        h1 {
+            color: #2d3748;
+            text-align: center;
+            margin-bottom: 10px;
+            font-size: 32px;
+            font-weight: 600;
+        }
+        
+        .subtitle {
+            text-align: center;
+            color: #718096;
+            margin-bottom: 40px;
+            font-size: 16px;
+        }
+        
+        .diagram-container {
+            background: #f7fafc;
+            border-radius: 12px;
+            padding: 30px;
+            overflow-x: auto;
+            border: 1px solid #e2e8f0;
+        }
+        
+        .mermaid {
+            display: flex;
+            justify-content: center;
+        }
+        
+        .instructions {
+            margin-top: 30px;
+            padding: 20px;
+            background: #edf2f7;
+            border-radius: 8px;
+            border-left: 4px solid #4299e1;
+        }
+        
+        .instructions h3 {
+            margin-top: 0;
+            color: #2d3748;
+            font-size: 18px;
+        }
+        
+        .instructions p {
+            color: #4a5568;
+            margin: 8px 0;
+            line-height: 1.6;
+        }
+        
+        .instructions code {
+            background: #cbd5e0;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-family: 'Courier New', monospace;
+            font-size: 14px;
+        }
+        
+        /* Mermaid styling overrides */
+        .mermaid svg {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🤖 Veridian IT Support Agent</h1>
+        <p class="subtitle">System Architecture & Process Flow</p>
+        
+        <div class="diagram-container">
+            <div class="mermaid">
+graph TB
+    A[Employee] -->|Submit Request| B[Streamlit Web Interface]
+    B --> C[Intent Classifier]
+    C --> D[Knowledge Base Retriever]
+    D --> E[Policy Conflict Detector]
+    E --> F[Decision Engine]
+    F --> G{Decision Type?}
+    G -->|Resolve| H[Auto-Resolution]
+    G -->|Escalate| I[Human Escalation]
+    G -->|Clarify| J[Follow-up Questions]
+    G -->|Conflict| K[Policy Review]
+    H --> L[Ticket Manager]
+    I --> L
+    J --> B
+    K --> L
+    L --> M[Audit Logger]
+    M --> N[Response to Employee]
+    
+    O[(Knowledge Base)] -.->|Search| D
+    P[(Ticket Queue)] -.->|Create/Update| L
+    Q[(Audit Log)] -.->|Append| M
+    
+    style H fill:#90EE90
+    style I fill:#FFB6C1
+    style J fill:#87CEEB
+    style K fill:#FFD700
+            </div>
+        </div>
+        
+        <div class="instructions">
+            <h3>📸 How to Export as Image</h3>
+            <p><strong>Method 1: Screenshot (Recommended)</strong></p>
+            <p>1. Open this file in your browser (already open!)</p>
+            <p>2. Press <code>F11</code> for fullscreen (optional - for cleaner capture)</p>
+            <p>3. Use Windows Snipping Tool (<code>Win + Shift + S</code>) to capture the diagram area</p>
+            <p>4. Save as <code>architecture_diagram.png</code></p>
+            
+            <p style="margin-top: 20px;"><strong>Method 2: Browser DevTools</strong></p>
+            <p>1. Right-click on the diagram → Inspect</p>
+            <p>2. Right-click on the <code>&lt;svg&gt;</code> element in DevTools</p>
+            <p>3. Copy → Copy outerHTML</p>
+            <p>4. Save to a .svg file for vector graphics</p>
+            
+            <p style="margin-top: 20px;"><strong>Method 3: Print to PDF</strong></p>
+            <p>1. Press <code>Ctrl + P</code></p>
+            <p>2. Select "Save as PDF" as destination</p>
+            <p>3. Adjust margins and save</p>
+        </div>
+    </div>
+    
+    <script>
+        // Initialize Mermaid
+        mermaid.initialize({ 
+            startOnLoad: true,
+            theme: 'default',
+            flowchart: {
+                useMaxWidth: true,
+                htmlLabels: true,
+                curve: 'basis'
+            }
+        });
+        
+        // Log when diagram is ready
+        window.addEventListener('load', () => {
+            console.log('Architecture diagram loaded successfully!');
+            console.log('Ready to screenshot or export.');
+        });
+    </script>
+</body>
+</html>

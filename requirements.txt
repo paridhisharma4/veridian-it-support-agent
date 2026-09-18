@@ -1,0 +1,14 @@
+# Core dependencies for Veridian IT Support Agent
+# This agent uses rule-based logic (no ML/LLM required)
+
+# Web interface
+streamlit>=1.31.0
+
+# All other dependencies are Python standard library:
+# - json (built-in)
+# - re (built-in)
+# - datetime (built-in)
+# - pathlib (built-in)
+# - typing (built-in)
+# - os (built-in)
+# - sys (built-in)
